@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertUpdate"
+    android:background="#BCFBEBAA">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:text="Yemek İsmi"
+            android:textSize="25dp"
+            android:textStyle="italic"
+            android:textColor="#611400"></TextView>
+        <EditText
+            android:id="@+id/FoodName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="25dp"
+            android:textStyle="italic"
+            android:textSize="25dp"
+            android:background="#FAFBEBAA"
+            android:textColor="#611400"
+           ></EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Malzemeler"
+            android:textSize="25dp"
+            android:textStyle="italic"
+            android:textColor="#611400"></TextView>
+
+        <EditText
+            android:id="@+id/FoodIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:textStyle="italic"
+            android:textSize="25dp"
+            android:background="#FAFBEBAA"
+            android:textColor="#611400"
+            ></EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Tarif"
+            android:textSize="25dp"
+            android:textStyle="italic"
+            android:textColor="#611400"></TextView>
+
+        <EditText
+            android:id="@+id/FoodRecipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:textStyle="italic"
+            android:textSize="25dp"
+            android:background="#FAFBEBAA"
+            android:textColor="#611400"
+            ></EditText>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FAFBEBAA">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:text="Resim Ekle"
+            android:textColor="#611400"
+            android:textSize="25dp"
+            android:textStyle="italic">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/ImageButton"
+            android:layout_width="261dp"
+            android:layout_height="193dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_baseline_library_add_24">
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="25dp"
+                android:backgroundTint="#611400"
+                android:text="KAYDET"
+                android:textStyle="italic"
+                android:textSize="20dp"></Button>
+
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="25dp"
+                android:backgroundTint="#611400"
+                android:text="Sil"
+                android:textStyle="italic"
+                android:textSize="20dp"></Button>
+        </LinearLayout>
+</LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>
